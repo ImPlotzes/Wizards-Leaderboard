@@ -1,5 +1,5 @@
 async function loadLeaderboard() {
-    let lb = await fetch("https://leaderboard.plotzes.workers.dev");
+    let lb = await fetch("https://leaderboard.plotzes.ml");
     lb = await lb.json();
     if(lb.success) {
         lbData = lb.lb_data;
