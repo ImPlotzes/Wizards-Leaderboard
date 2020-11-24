@@ -12,7 +12,7 @@ async function loadLeaderboard() {
             <td>${i + 1}</td>
             <td><a href="https://plotzes.ml/stats/?player=${player.name}" target="_blank">${player.name}</a></td>
             <td>${player.points_capture}</td>
-            <td>${new Date(player.last_update).toLocaleDateString()}</td>`;
+            <td>${new Date(player.last_update).toLocaleDateString()} ${new Date(player.last_update).toLocaleTimeString()}</td>`;
             row.innerHTML = innerRow;
             tbody.appendChild(row);
         }
